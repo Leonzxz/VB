@@ -31,20 +31,21 @@ Partial Class fRecruitment
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.tbidpel = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.ListBox2 = New System.Windows.Forms.ListBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.tbnik = New System.Windows.Forms.TextBox()
+        Me.tbnama = New System.Windows.Forms.TextBox()
+        Me.tbtempatlahir = New System.Windows.Forms.TextBox()
+        Me.tbtanggallahir = New System.Windows.Forms.TextBox()
+        Me.tbalamat = New System.Windows.Forms.TextBox()
+        Me.rbpria = New System.Windows.Forms.RadioButton()
+        Me.rbwanita = New System.Windows.Forms.RadioButton()
+        Me.lbpengalaman = New System.Windows.Forms.ListBox()
+        Me.tbpendidikan = New System.Windows.Forms.TextBox()
+        Me.lbsertifikat = New System.Windows.Forms.ListBox()
+        Me.btnsubmit = New System.Windows.Forms.Button()
+        Me.btnclear = New System.Windows.Forms.Button()
+        Me.Label11 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -128,12 +129,12 @@ Partial Class fRecruitment
         Me.Label9.TabIndex = 8
         Me.Label9.Text = "Pendidikan Terakhir"
         '
-        'TextBox1
+        'tbidpel
         '
-        Me.TextBox1.Location = New System.Drawing.Point(85, 57)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 9
+        Me.tbidpel.Location = New System.Drawing.Point(85, 57)
+        Me.tbidpel.Name = "tbidpel"
+        Me.tbidpel.Size = New System.Drawing.Size(100, 20)
+        Me.tbidpel.TabIndex = 9
         '
         'Label10
         '
@@ -144,124 +145,137 @@ Partial Class fRecruitment
         Me.Label10.TabIndex = 10
         Me.Label10.Text = "Sertifikat"
         '
-        'TextBox2
+        'tbnik
         '
-        Me.TextBox2.Location = New System.Drawing.Point(85, 88)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox2.TabIndex = 11
+        Me.tbnik.Location = New System.Drawing.Point(85, 88)
+        Me.tbnik.Name = "tbnik"
+        Me.tbnik.Size = New System.Drawing.Size(100, 20)
+        Me.tbnik.TabIndex = 11
         '
-        'TextBox3
+        'tbnama
         '
-        Me.TextBox3.Location = New System.Drawing.Point(85, 118)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox3.TabIndex = 12
+        Me.tbnama.Location = New System.Drawing.Point(85, 118)
+        Me.tbnama.Name = "tbnama"
+        Me.tbnama.Size = New System.Drawing.Size(100, 20)
+        Me.tbnama.TabIndex = 12
         '
-        'TextBox4
+        'tbtempatlahir
         '
-        Me.TextBox4.Location = New System.Drawing.Point(85, 147)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox4.TabIndex = 13
+        Me.tbtempatlahir.Location = New System.Drawing.Point(85, 147)
+        Me.tbtempatlahir.Name = "tbtempatlahir"
+        Me.tbtempatlahir.Size = New System.Drawing.Size(100, 20)
+        Me.tbtempatlahir.TabIndex = 13
         '
-        'TextBox5
+        'tbtanggallahir
         '
-        Me.TextBox5.Location = New System.Drawing.Point(85, 177)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox5.TabIndex = 14
+        Me.tbtanggallahir.Location = New System.Drawing.Point(85, 177)
+        Me.tbtanggallahir.Name = "tbtanggallahir"
+        Me.tbtanggallahir.Size = New System.Drawing.Size(100, 20)
+        Me.tbtanggallahir.TabIndex = 14
         '
-        'TextBox6
+        'tbalamat
         '
-        Me.TextBox6.Location = New System.Drawing.Point(85, 253)
-        Me.TextBox6.Multiline = True
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(223, 65)
-        Me.TextBox6.TabIndex = 15
+        Me.tbalamat.Location = New System.Drawing.Point(85, 253)
+        Me.tbalamat.Multiline = True
+        Me.tbalamat.Name = "tbalamat"
+        Me.tbalamat.Size = New System.Drawing.Size(223, 65)
+        Me.tbalamat.TabIndex = 15
         '
-        'RadioButton1
+        'rbpria
         '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(85, 211)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(90, 17)
-        Me.RadioButton1.TabIndex = 16
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "RadioButton1"
-        Me.RadioButton1.UseVisualStyleBackColor = True
+        Me.rbpria.AutoSize = True
+        Me.rbpria.CheckAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.rbpria.Location = New System.Drawing.Point(85, 211)
+        Me.rbpria.Name = "rbpria"
+        Me.rbpria.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.rbpria.Size = New System.Drawing.Size(43, 17)
+        Me.rbpria.TabIndex = 16
+        Me.rbpria.TabStop = True
+        Me.rbpria.Text = "Pria"
+        Me.rbpria.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.rbpria.UseVisualStyleBackColor = True
         '
-        'RadioButton2
+        'rbwanita
         '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(199, 211)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(90, 17)
-        Me.RadioButton2.TabIndex = 17
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "RadioButton2"
-        Me.RadioButton2.UseVisualStyleBackColor = True
+        Me.rbwanita.AutoSize = True
+        Me.rbwanita.Location = New System.Drawing.Point(134, 211)
+        Me.rbwanita.Name = "rbwanita"
+        Me.rbwanita.Size = New System.Drawing.Size(59, 17)
+        Me.rbwanita.TabIndex = 17
+        Me.rbwanita.TabStop = True
+        Me.rbwanita.Text = "Wanita"
+        Me.rbwanita.UseVisualStyleBackColor = True
         '
-        'ListBox1
+        'lbpengalaman
         '
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Location = New System.Drawing.Point(409, 88)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(138, 43)
-        Me.ListBox1.TabIndex = 18
+        Me.lbpengalaman.FormattingEnabled = True
+        Me.lbpengalaman.Location = New System.Drawing.Point(409, 88)
+        Me.lbpengalaman.Name = "lbpengalaman"
+        Me.lbpengalaman.Size = New System.Drawing.Size(138, 43)
+        Me.lbpengalaman.TabIndex = 18
         '
-        'TextBox7
+        'tbpendidikan
         '
-        Me.TextBox7.Location = New System.Drawing.Point(409, 57)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox7.TabIndex = 19
+        Me.tbpendidikan.Location = New System.Drawing.Point(409, 57)
+        Me.tbpendidikan.Name = "tbpendidikan"
+        Me.tbpendidikan.Size = New System.Drawing.Size(100, 20)
+        Me.tbpendidikan.TabIndex = 19
         '
-        'ListBox2
+        'lbsertifikat
         '
-        Me.ListBox2.FormattingEnabled = True
-        Me.ListBox2.Location = New System.Drawing.Point(409, 147)
-        Me.ListBox2.Name = "ListBox2"
-        Me.ListBox2.Size = New System.Drawing.Size(138, 43)
-        Me.ListBox2.TabIndex = 20
+        Me.lbsertifikat.FormattingEnabled = True
+        Me.lbsertifikat.Location = New System.Drawing.Point(409, 147)
+        Me.lbsertifikat.Name = "lbsertifikat"
+        Me.lbsertifikat.Size = New System.Drawing.Size(138, 43)
+        Me.lbsertifikat.TabIndex = 20
         '
-        'Button1
+        'btnsubmit
         '
-        Me.Button1.Location = New System.Drawing.Point(355, 248)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 21
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnsubmit.Location = New System.Drawing.Point(349, 253)
+        Me.btnsubmit.Name = "btnsubmit"
+        Me.btnsubmit.Size = New System.Drawing.Size(75, 23)
+        Me.btnsubmit.TabIndex = 21
+        Me.btnsubmit.Text = "Submit"
+        Me.btnsubmit.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btnclear
         '
-        Me.Button2.Location = New System.Drawing.Point(472, 248)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 22
-        Me.Button2.Text = "Button2"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnclear.Location = New System.Drawing.Point(463, 253)
+        Me.btnclear.Name = "btnclear"
+        Me.btnclear.Size = New System.Drawing.Size(75, 23)
+        Me.btnclear.TabIndex = 22
+        Me.btnclear.Text = "Clear"
+        Me.btnclear.UseVisualStyleBackColor = True
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(31, 28)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(114, 13)
+        Me.Label11.TabIndex = 30
+        Me.Label11.Text = "Recruitment Karyawan"
         '
         'fRecruitment
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(563, 345)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.ListBox2)
-        Me.Controls.Add(Me.TextBox7)
-        Me.Controls.Add(Me.ListBox1)
-        Me.Controls.Add(Me.RadioButton2)
-        Me.Controls.Add(Me.RadioButton1)
-        Me.Controls.Add(Me.TextBox6)
-        Me.Controls.Add(Me.TextBox5)
-        Me.Controls.Add(Me.TextBox4)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.Label11)
+        Me.Controls.Add(Me.btnclear)
+        Me.Controls.Add(Me.btnsubmit)
+        Me.Controls.Add(Me.lbsertifikat)
+        Me.Controls.Add(Me.tbpendidikan)
+        Me.Controls.Add(Me.lbpengalaman)
+        Me.Controls.Add(Me.rbwanita)
+        Me.Controls.Add(Me.rbpria)
+        Me.Controls.Add(Me.tbalamat)
+        Me.Controls.Add(Me.tbtanggallahir)
+        Me.Controls.Add(Me.tbtempatlahir)
+        Me.Controls.Add(Me.tbnama)
+        Me.Controls.Add(Me.tbnik)
         Me.Controls.Add(Me.Label10)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.tbidpel)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
@@ -286,19 +300,20 @@ Partial Class fRecruitment
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents Label9 As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents tbidpel As System.Windows.Forms.TextBox
     Friend WithEvents Label10 As System.Windows.Forms.Label
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
-    Friend WithEvents RadioButton1 As System.Windows.Forms.RadioButton
-    Friend WithEvents RadioButton2 As System.Windows.Forms.RadioButton
-    Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
-    Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
-    Friend WithEvents ListBox2 As System.Windows.Forms.ListBox
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents tbnik As System.Windows.Forms.TextBox
+    Friend WithEvents tbnama As System.Windows.Forms.TextBox
+    Friend WithEvents tbtempatlahir As System.Windows.Forms.TextBox
+    Friend WithEvents tbtanggallahir As System.Windows.Forms.TextBox
+    Friend WithEvents tbalamat As System.Windows.Forms.TextBox
+    Friend WithEvents rbpria As System.Windows.Forms.RadioButton
+    Friend WithEvents rbwanita As System.Windows.Forms.RadioButton
+    Friend WithEvents lbpengalaman As System.Windows.Forms.ListBox
+    Friend WithEvents tbpendidikan As System.Windows.Forms.TextBox
+    Friend WithEvents lbsertifikat As System.Windows.Forms.ListBox
+    Friend WithEvents btnsubmit As System.Windows.Forms.Button
+    Friend WithEvents btnclear As System.Windows.Forms.Button
+    Friend WithEvents Label11 As System.Windows.Forms.Label
 
 End Class

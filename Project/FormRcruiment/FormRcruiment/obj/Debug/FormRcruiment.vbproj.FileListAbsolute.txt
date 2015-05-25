@@ -1,1 +1,11 @@
 C:\Users\Lenovo\Documents\Tugas\Semester 4\PVB\Project\FormRcruiment\FormRcruiment\bin\Debug\FormRcruiment.exe.config
+C:\Users\Lenovo\Desktop\VB\Project\FormRcruiment\FormRcruiment\bin\Debug\FormRcruiment.exe.config
+C:\Users\Lenovo\Desktop\VB\Project\FormRcruiment\FormRcruiment\bin\Debug\FormRcruiment.exe
+C:\Users\Lenovo\Desktop\VB\Project\FormRcruiment\FormRcruiment\bin\Debug\FormRcruiment.pdb
+C:\Users\Lenovo\Desktop\VB\Project\FormRcruiment\FormRcruiment\bin\Debug\FormRcruiment.xml
+C:\Users\Lenovo\Desktop\VB\Project\FormRcruiment\FormRcruiment\obj\Debug\FormRcruiment.fRecruitment.resources
+C:\Users\Lenovo\Desktop\VB\Project\FormRcruiment\FormRcruiment\obj\Debug\FormRcruiment.Resources.resources
+C:\Users\Lenovo\Desktop\VB\Project\FormRcruiment\FormRcruiment\obj\Debug\FormRcruiment.vbproj.GenerateResource.Cache
+C:\Users\Lenovo\Desktop\VB\Project\FormRcruiment\FormRcruiment\obj\Debug\FormRcruiment.exe
+C:\Users\Lenovo\Desktop\VB\Project\FormRcruiment\FormRcruiment\obj\Debug\FormRcruiment.xml
+C:\Users\Lenovo\Desktop\VB\Project\FormRcruiment\FormRcruiment\obj\Debug\FormRcruiment.pdb
