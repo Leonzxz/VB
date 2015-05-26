@@ -71,24 +71,44 @@ Public Class fRecruitment
             dsData = New DataSet
             daData.Fill(dsData)
 
+<<<<<<< HEAD
             query = "INSERT INTO [pendidikan] (idpel, jenjang) VALUES('" & idpel & "','" & pendidikan & "')"
+=======
+            query = "INSERT INTO [pendidikan] (jenjang) VALUES('" & pendidikan & "')"
+>>>>>>> origin/master
             daData = New OleDbDataAdapter(query, conn)
             dsData = New DataSet
             daData.Fill(dsData)
 
+<<<<<<< HEAD
             For i = 0 To lbpengalaman.Items.Count - 1
                 query = "INSERT INTO [pengalaman] (idpel, pengalaman) VALUES ('" & idpel & "','" & lbpengalaman.Items(i) & "')"
+=======
+<<<<<<< HEAD
+            For i = 0 To lbpengalaman.Items.Count - 1
+                query = "INSERT INTO [pengalaman] (pengalaman) VALUES ('" & lbpengalaman.Items(i) & "')"
+>>>>>>> origin/master
                 daData = New OleDbDataAdapter(query, conn)
                 dsData = New DataSet
                 daData.Fill(dsData)
             Next
 
             For i = 0 To lbsertifikat.Items.Count - 1
+<<<<<<< HEAD
                 query = "INSERT INTO [sertifikat] (idpel, sertifikat) VALUES ('" & idpel & "','" & lbsertifikat.Items(i) & "')"
+=======
+                query = "INSERT INTO [sertifikat] (sertifikat) VALUES ('" & lbsertifikat.Items(i) & "')"
+>>>>>>> origin/master
                 daData = New OleDbDataAdapter(query, conn)
                 dsData = New DataSet
                 daData.Fill(dsData)
             Next
+<<<<<<< HEAD
+=======
+=======
+
+>>>>>>> origin/master
+>>>>>>> origin/master
 
             MsgBox("Save Data Succeeded", MsgBoxStyle.Exclamation, "Error")
             Return query
