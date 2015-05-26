@@ -58,3 +58,7 @@ C:\Users\Arifin\Desktop\VB\Project\FormRcruiment\FormRcruiment\obj\Debug\FormRcr
 C:\Users\Arifin\Desktop\VB\Project\FormRcruiment\FormRcruiment\bin\Debug\FormRcruiment.exe
 C:\Users\Arifin\Desktop\VB\Project\FormRcruiment\FormRcruiment\bin\Debug\FormRcruiment.pdb
 C:\Users\Arifin\Desktop\VB\Project\FormRcruiment\FormRcruiment\bin\Debug\FormRcruiment.xml
+D:\visual\VB\Project\FormRcruiment\FormRcruiment\bin\Debug\FormRcruiment.exe.config
+D:\visual\VB\Project\FormRcruiment\FormRcruiment\obj\Debug\FormRcruiment.exe
+D:\visual\VB\Project\FormRcruiment\FormRcruiment\obj\Debug\FormRcruiment.xml
+D:\visual\VB\Project\FormRcruiment\FormRcruiment\obj\Debug\FormRcruiment.pdb

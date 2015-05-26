@@ -22,17 +22,9 @@ Partial Class newkar
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.lbnewkar = New System.Windows.Forms.ListBox()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.lbnewkar = New System.Windows.Forms.ListView()
         Me.SuspendLayout()
-        '
-        'lbnewkar
-        '
-        Me.lbnewkar.FormattingEnabled = True
-        Me.lbnewkar.Location = New System.Drawing.Point(12, 12)
-        Me.lbnewkar.Name = "lbnewkar"
-        Me.lbnewkar.Size = New System.Drawing.Size(380, 225)
-        Me.lbnewkar.TabIndex = 0
         '
         'Button1
         '
@@ -43,18 +35,28 @@ Partial Class newkar
         Me.Button1.Text = "New Karyawan"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'lbnewkar
+        '
+        Me.lbnewkar.GridLines = True
+        Me.lbnewkar.Location = New System.Drawing.Point(12, 12)
+        Me.lbnewkar.Name = "lbnewkar"
+        Me.lbnewkar.Size = New System.Drawing.Size(381, 225)
+        Me.lbnewkar.TabIndex = 2
+        Me.lbnewkar.UseCompatibleStateImageBehavior = False
+        Me.lbnewkar.View = System.Windows.Forms.View.Details
+        '
         'newkar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(405, 274)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.lbnewkar)
+        Me.Controls.Add(Me.Button1)
         Me.Name = "newkar"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents lbnewkar As System.Windows.Forms.ListBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents lbnewkar As System.Windows.Forms.ListView
 End Class

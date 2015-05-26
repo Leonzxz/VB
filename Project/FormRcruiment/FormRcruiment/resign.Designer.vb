@@ -22,17 +22,9 @@ Partial Class resign
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.lbresign = New System.Windows.Forms.ListBox()
         Me.btnresign = New System.Windows.Forms.Button()
+        Me.lbresign = New System.Windows.Forms.ListView()
         Me.SuspendLayout()
-        '
-        'lbresign
-        '
-        Me.lbresign.FormattingEnabled = True
-        Me.lbresign.Location = New System.Drawing.Point(12, 12)
-        Me.lbresign.Name = "lbresign"
-        Me.lbresign.Size = New System.Drawing.Size(365, 225)
-        Me.lbresign.TabIndex = 0
         '
         'btnresign
         '
@@ -43,18 +35,28 @@ Partial Class resign
         Me.btnresign.Text = "Resign"
         Me.btnresign.UseVisualStyleBackColor = True
         '
+        'lbresign
+        '
+        Me.lbresign.GridLines = True
+        Me.lbresign.Location = New System.Drawing.Point(12, 12)
+        Me.lbresign.Name = "lbresign"
+        Me.lbresign.Size = New System.Drawing.Size(371, 225)
+        Me.lbresign.TabIndex = 2
+        Me.lbresign.UseCompatibleStateImageBehavior = False
+        Me.lbresign.View = System.Windows.Forms.View.Details
+        '
         'resign
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(395, 279)
-        Me.Controls.Add(Me.btnresign)
         Me.Controls.Add(Me.lbresign)
+        Me.Controls.Add(Me.btnresign)
         Me.Name = "resign"
         Me.Text = "Resign"
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents lbresign As System.Windows.Forms.ListBox
     Friend WithEvents btnresign As System.Windows.Forms.Button
+    Friend WithEvents lbresign As System.Windows.Forms.ListView
 End Class
