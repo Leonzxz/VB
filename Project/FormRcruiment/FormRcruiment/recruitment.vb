@@ -7,7 +7,6 @@ Public Class fRecruitment
     Dim tempatl As String
     Dim tanggall As DateTime
     Dim alamat As String
-    Dim pendidikan As String
     Dim jk As String
     Dim rt As String
     Dim rw As String
@@ -17,8 +16,7 @@ Public Class fRecruitment
     Dim agama As String
     Dim pekerjaan As String
     Dim kwn As String
-    Dim pengalaman As String
-    Dim sertifikat As String
+    Dim pendidikan As String
 
     Private Sub clear()
         tbidpel.Clear()
@@ -39,9 +37,13 @@ Public Class fRecruitment
         tbkwn.Clear()
         tbpengalaman.Clear()
         tbsertifikat.Clear()
+        lbpengalaman.Items.Clear()
+        lbsertifikat.Items.Clear()
+
 
     End Sub
     Private Function SaveData()
+        Dim i As Integer
         Try
             idpel = tbidpel.Text
             nik = tbnik.Text
@@ -65,14 +67,33 @@ Public Class fRecruitment
             kwn = tbkwn.Text
 
             query = "INSERT INTO bio VALUES('" & idpel & "','" & nik & "','" & nama & "','" & tempatl & "','" & tanggall & "','" & jk & "','" & alamat & "','" & rt & "','" & rw & "','" & kelurahan & "','" & kecamatan & "','" & kota & "','" & agama & "','" & pekerjaan & "','" & kwn & "')"
-            daData = New OleDbDataAdapter(Query, conn)
+            daData = New OleDbDataAdapter(query, conn)
             dsData = New DataSet
             daData.Fill(dsData)
-          
+
+            query = "INSERT INTO [pendidikan] (idpel, jenjang) VALUES('" & idpel & "','" & pendidikan & "')"
+            daData = New OleDbDataAdapter(query, conn)
+            dsData = New DataSet
+            daData.Fill(dsData)
+
+            For i = 0 To lbpengalaman.Items.Count - 1
+                query = "INSERT INTO [pengalaman] (idpel, pengalaman) VALUES ('" & idpel & "','" & lbpengalaman.Items(i) & "')"
+                daData = New OleDbDataAdapter(query, conn)
+                dsData = New DataSet
+                daData.Fill(dsData)
+            Next
+
+            For i = 0 To lbsertifikat.Items.Count - 1
+                query = "INSERT INTO [sertifikat] (idpel, sertifikat) VALUES ('" & idpel & "','" & lbsertifikat.Items(i) & "')"
+                daData = New OleDbDataAdapter(query, conn)
+                dsData = New DataSet
+                daData.Fill(dsData)
+            Next
+
             MsgBox("Save Data Succeeded", MsgBoxStyle.Exclamation, "Error")
             Return query
         Catch ex As Exception
-            MsgBox("Data Already Exist", MsgBoxStyle.Exclamation, "Error")
+            MsgBox("Data Already Exist" & " " & ex.Message, MsgBoxStyle.Exclamation, "Error")
             Return 0
         End Try
     End Function
@@ -114,5 +135,9 @@ Public Class fRecruitment
 
     Private Sub btndelser_Click(sender As Object, e As EventArgs) Handles btndelser.Click
         lbsertifikat.Items.RemoveAt(lbsertifikat.SelectedIndex)
+    End Sub
+
+    Private Sub fRecruitment_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        KoneksiAccess()
     End Sub
 End Class
