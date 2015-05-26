@@ -9,6 +9,7 @@ C:\Users\Lenovo\Desktop\VB\Project\FormRcruiment\FormRcruiment\obj\Debug\FormRcr
 C:\Users\Lenovo\Desktop\VB\Project\FormRcruiment\FormRcruiment\obj\Debug\FormRcruiment.exe
 C:\Users\Lenovo\Desktop\VB\Project\FormRcruiment\FormRcruiment\obj\Debug\FormRcruiment.xml
 C:\Users\Lenovo\Desktop\VB\Project\FormRcruiment\FormRcruiment\obj\Debug\FormRcruiment.pdb
+<<<<<<< HEAD
 D:\Dekstop\Tugas\Visual Basic\VB\Project\FormRcruiment\FormRcruiment\bin\Debug\FormRcruiment.exe.config
 D:\Dekstop\Tugas\Visual Basic\VB\Project\FormRcruiment\FormRcruiment\obj\Debug\FormRcruiment.exe
 D:\Dekstop\Tugas\Visual Basic\VB\Project\FormRcruiment\FormRcruiment\obj\Debug\FormRcruiment.xml
@@ -27,3 +28,5 @@ F:\VB\Project\FormRcruiment\FormRcruiment\obj\Debug\FormRcruiment.viewkar.resour
 F:\VB\Project\FormRcruiment\FormRcruiment\bin\Debug\FormRcruiment.exe
 F:\VB\Project\FormRcruiment\FormRcruiment\bin\Debug\FormRcruiment.pdb
 F:\VB\Project\FormRcruiment\FormRcruiment\bin\Debug\FormRcruiment.xml
+=======
+>>>>>>> origin/master
