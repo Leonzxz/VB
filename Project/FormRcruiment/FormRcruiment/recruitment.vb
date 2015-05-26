@@ -68,11 +68,13 @@ Public Class fRecruitment
             daData = New OleDbDataAdapter(Query, conn)
             dsData = New DataSet
             daData.Fill(dsData)
-          
+
+
+
             MsgBox("Save Data Succeeded", MsgBoxStyle.Exclamation, "Error")
             Return query
         Catch ex As Exception
-            MsgBox("Data Already Exist", MsgBoxStyle.Exclamation, "Error")
+            MsgBox("Data Already Exist" & " " & ex.Message, MsgBoxStyle.Exclamation, "Error")
             Return 0
         End Try
     End Function
@@ -114,5 +116,9 @@ Public Class fRecruitment
 
     Private Sub btndelser_Click(sender As Object, e As EventArgs) Handles btndelser.Click
         lbsertifikat.Items.RemoveAt(lbsertifikat.SelectedIndex)
+    End Sub
+
+    Private Sub fRecruitment_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        KoneksiAccess()
     End Sub
 End Class
