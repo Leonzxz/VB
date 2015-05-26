@@ -70,13 +70,38 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.vb">
+    <Compile Include="resign.Designer.vb">
+      <DependentUpon>resign.vb</DependentUpon>
+    </Compile>
+    <Compile Include="resign.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="LoginForm2.Designer.vb">
+      <DependentUpon>LoginForm2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm2.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="newkar.Designer.vb">
+      <DependentUpon>newkar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="newkar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="recruitment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="recruitment.Designer.vb">
+      <DependentUpon>recruitment.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewkar.Designer.vb">
+      <DependentUpon>viewkar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="viewkar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="koneksi.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -94,8 +119,20 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="resign.resx">
+      <DependentUpon>resign.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm2.resx">
+      <DependentUpon>LoginForm2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newkar.resx">
+      <DependentUpon>newkar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="recruitment.resx">
+      <DependentUpon>recruitment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewkar.resx">
+      <DependentUpon>viewkar.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
