@@ -76,6 +76,7 @@ Public Class fRecruitment
             dsData = New DataSet
             daData.Fill(dsData)
 
+<<<<<<< HEAD
             For i = 0 To lbpengalaman.Items.Count - 1
                 query = "INSERT INTO [pengalaman] (pengalaman) VALUES ('" & lbpengalaman.Items(i) & "')"
                 daData = New OleDbDataAdapter(query, conn)
@@ -89,6 +90,9 @@ Public Class fRecruitment
                 dsData = New DataSet
                 daData.Fill(dsData)
             Next
+=======
+
+>>>>>>> origin/master
 
             MsgBox("Save Data Succeeded", MsgBoxStyle.Exclamation, "Error")
             Return query
