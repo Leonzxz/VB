@@ -30,3 +30,15 @@ F:\VB\Project\FormRcruiment\FormRcruiment\bin\Debug\FormRcruiment.pdb
 F:\VB\Project\FormRcruiment\FormRcruiment\bin\Debug\FormRcruiment.xml
 =======
 >>>>>>> origin/master
+D:\Dekstop\Tugas\Visual Basic\VB\Project\FormRcruiment\FormRcruiment\obj\Debug\FormRcruiment.resign.resources
+D:\Dekstop\Tugas\Visual Basic\VB\Project\FormRcruiment\FormRcruiment\obj\Debug\FormRcruiment.LoginForm2.resources
+D:\Dekstop\Tugas\Visual Basic\VB\Project\FormRcruiment\FormRcruiment\obj\Debug\FormRcruiment.newkar.resources
+D:\Dekstop\Tugas\Visual Basic\VB\Project\FormRcruiment\FormRcruiment\obj\Debug\FormRcruiment.fRecruitment.resources
+D:\Dekstop\Tugas\Visual Basic\VB\Project\FormRcruiment\FormRcruiment\obj\Debug\FormRcruiment.viewkar.resources
+D:\Dekstop\Tugas\Visual Basic\VB\Project\FormRcruiment\FormRcruiment\obj\Debug\FormRcruiment.Resources.resources
+D:\Dekstop\Tugas\Visual Basic\VB\Project\FormRcruiment\FormRcruiment\obj\Debug\FormRcruiment.vbproj.GenerateResource.Cache
+D:\Dekstop\Tugas\Visual Basic\VB\Project\FormRcruiment\FormRcruiment\bin\Debug\FormRcruiment.exe
+D:\Dekstop\Tugas\Visual Basic\VB\Project\FormRcruiment\FormRcruiment\bin\Debug\FormRcruiment.pdb
+D:\Dekstop\Tugas\Visual Basic\VB\Project\FormRcruiment\FormRcruiment\bin\Debug\FormRcruiment.xml
+D:\Dekstop\Tugas\Visual Basic\VB\Project\FormRcruiment\FormRcruiment\obj\Debug\FormRcruiment.Form2.resources
+D:\Dekstop\Tugas\Visual Basic\VB\Project\FormRcruiment\FormRcruiment\obj\Debug\FormRcruiment.vbprojResolveAssemblyReference.cache

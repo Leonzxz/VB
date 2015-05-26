@@ -46,7 +46,6 @@ Partial Class fRecruitment
         Me.tbpengalaman = New System.Windows.Forms.TextBox()
         Me.lbpengalaman = New System.Windows.Forms.ListBox()
         Me.tbsertifikat = New System.Windows.Forms.TextBox()
-        Me.lbsertifikat = New System.Windows.Forms.ListView()
         Me.btnaddpeng = New System.Windows.Forms.Button()
         Me.btneditpeng = New System.Windows.Forms.Button()
         Me.btndelpeng = New System.Windows.Forms.Button()
@@ -69,6 +68,7 @@ Partial Class fRecruitment
         Me.tbagama = New System.Windows.Forms.TextBox()
         Me.tbpekerjaan = New System.Windows.Forms.TextBox()
         Me.tbkwn = New System.Windows.Forms.TextBox()
+        Me.lbsertifikat = New System.Windows.Forms.ListBox()
         Me.SuspendLayout()
         '
         'Label1
@@ -276,14 +276,6 @@ Partial Class fRecruitment
         Me.tbsertifikat.Size = New System.Drawing.Size(221, 20)
         Me.tbsertifikat.TabIndex = 33
         '
-        'lbsertifikat
-        '
-        Me.lbsertifikat.Location = New System.Drawing.Point(414, 323)
-        Me.lbsertifikat.Name = "lbsertifikat"
-        Me.lbsertifikat.Size = New System.Drawing.Size(221, 138)
-        Me.lbsertifikat.TabIndex = 34
-        Me.lbsertifikat.UseCompatibleStateImageBehavior = False
-        '
         'btnaddpeng
         '
         Me.btnaddpeng.Location = New System.Drawing.Point(671, 123)
@@ -466,11 +458,20 @@ Partial Class fRecruitment
         Me.tbkwn.Size = New System.Drawing.Size(165, 20)
         Me.tbkwn.TabIndex = 56
         '
+        'lbsertifikat
+        '
+        Me.lbsertifikat.FormattingEnabled = True
+        Me.lbsertifikat.Location = New System.Drawing.Point(414, 318)
+        Me.lbsertifikat.Name = "lbsertifikat"
+        Me.lbsertifikat.Size = New System.Drawing.Size(221, 134)
+        Me.lbsertifikat.TabIndex = 57
+        '
         'fRecruitment
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(765, 525)
+        Me.Controls.Add(Me.lbsertifikat)
         Me.Controls.Add(Me.tbkwn)
         Me.Controls.Add(Me.tbpekerjaan)
         Me.Controls.Add(Me.tbagama)
@@ -493,7 +494,6 @@ Partial Class fRecruitment
         Me.Controls.Add(Me.btndelpeng)
         Me.Controls.Add(Me.btneditpeng)
         Me.Controls.Add(Me.btnaddpeng)
-        Me.Controls.Add(Me.lbsertifikat)
         Me.Controls.Add(Me.tbsertifikat)
         Me.Controls.Add(Me.lbpengalaman)
         Me.Controls.Add(Me.tbpengalaman)
@@ -548,7 +548,6 @@ Partial Class fRecruitment
     Friend WithEvents tbpengalaman As System.Windows.Forms.TextBox
     Friend WithEvents lbpengalaman As System.Windows.Forms.ListBox
     Friend WithEvents tbsertifikat As System.Windows.Forms.TextBox
-    Friend WithEvents lbsertifikat As System.Windows.Forms.ListView
     Friend WithEvents btnaddpeng As System.Windows.Forms.Button
     Friend WithEvents btneditpeng As System.Windows.Forms.Button
     Friend WithEvents btndelpeng As System.Windows.Forms.Button
@@ -571,5 +570,6 @@ Partial Class fRecruitment
     Friend WithEvents tbagama As System.Windows.Forms.TextBox
     Friend WithEvents tbpekerjaan As System.Windows.Forms.TextBox
     Friend WithEvents tbkwn As System.Windows.Forms.TextBox
+    Friend WithEvents lbsertifikat As System.Windows.Forms.ListBox
 
 End Class
